@@ -1,0 +1,39 @@
+A Program to demonstrate the use of @Autowire annotation:
+Programs:
+* ECommerSeller.java
+* Product.java
+* ProductDetails.java
+* Seller.java
+* AppConfig.java
+* Test.java
+Note:
+* @Autowired annotation is used to inject the dependencies.
+* @Autowired annotation used at constructor, field, setter method, parameter, annotation and method to injecting dependencies in spring.
+* @Autowired annotation is an alternative to the JSR-330 javax.inject.Inject annotation.
+* This annotation accept one attribute is required, it is used to make dependencies are optional to inject and it default value is true.
+* If multiple beans are find for dependency then container will throw the exception is  org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'Class Name' available.
+Output:
+-------- Bean Names ----------
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.event.internalEventListenerProcessor
+org.springframework.context.event.internalEventListenerFactory
+appConfig
+ECommerSeller
+productDetails
+iphone
+mi
+samsung
+oneplus
+amazon
+----------- Iphone Product Details -----------
+Product [productName=Iphone-15Pro, quantity=12, price=75000.0, vendor=Apple]
+----------- Mi Product Details -----------
+Product [productName=Mi-Y2, quantity=12, price=25000.0, vendor=Xiomi]
+----------- Samsung Product Details -----------
+Product [productName=Samsung-Galaxy, quantity=6, price=55000.0, vendor=Samsung]
+----------- OnePlus Product Details -----------
+Product [productName=OnePlus-N21, quantity=9, price=65000.0, vendor=OnePlus]
+----------- ECommerSeller Details -----------
+Seller [sellername=Amazon, rating=4.5]
